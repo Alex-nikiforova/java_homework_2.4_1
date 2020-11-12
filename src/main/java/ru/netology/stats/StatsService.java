@@ -11,10 +11,7 @@ public class StatsService {
     }
 
     public float calculateAverageSales(int[] sales) {
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
+        int sum = calculateSumSales(sales);
         float averageSum = sum / 12;
         return averageSum;
     }
